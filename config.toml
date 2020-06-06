@@ -1,0 +1,40 @@
+baseURL = "https://notes.rudra.dev/"
+languageCode = "en-us"
+
+pygmentsCodefences = true
+pygmentsStyle = "colorful"
+
+title = "rudra narayan"
+theme = "flamingo"
+[markup.goldmark.renderer]
+unsafe= true
+
+[params]
+  author = "Rudra Narayan"
+  description = "thoughts, obsessions and mostly rants"
+
+[[params.projects]]
+  name = "solitude"
+  description = "A git based note taking application. 📚"
+  demoLink = "https://solitudenote.github.io/solitude/"
+  sourceLink = "https://github.com/solitudenote/solitude"
+
+
+[[params.projects]]
+  name = "gitkeeper"
+  description = "A tiny microservice for client side GitHub authentication."
+  demoLink = "https://solitudenote-gitkeeper.glitch.me/"
+  sourceLink = "https://github.com/solitudenote/gitkeeper"
+
+
+[[params.projects]]
+  demoLink = ""
+  sourceLink = "https://github.com/mrprofessor/obliterate"
+  description = "A command line tool written in rust to replace rm."
+  name = "obliterate"
+
+[[params.projects]]
+  demoLink = "https://rudra.dev/"
+  sourceLink = "https://github.com/mrprofessor/rudra.dev"
+  description = "Personal blog built using Gatsby and grit."
+  name = "rudra.dev"

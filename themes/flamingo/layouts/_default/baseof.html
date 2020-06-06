@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ .Title }}</title>
+        {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+        {{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | minify | fingerprint}}
+        <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        {{ with .OutputFormats.Get "RSS" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+        {{- end }}
+
+    </head>
+    <body>
+        <div class="layout">
+            {{ partial "header" . }}
+            {{ block "main" . }}{{ end }}
+            {{ partial "footer" . }}
+        </div>
+    </body>
+
+    <script>
+     // Script to check active nav menu
+     (function() {
+         const links = document.querySelectorAll("nav a")
+         const currentUrl = location.href
+
+         for (const link of links) {
+             if (location.href.split("/").length === 4 && link.href.endsWith("/posts/")) {
+                 link.classList.add("active-link")
+                 break;
+             }
+
+             if (link.href === currentUrl) {
+                 link.classList.add("active-link")
+             }
+         }
+     }())
+    </script>
+
+</html>
