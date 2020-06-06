@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Switching to Emacs</title>
+        <meta name="description" content="thoughts, obsessions and mostly rants">
+        <meta name="author" content="Rudra Narayan">
+
+        
+        <link rel="stylesheet" href="https://notes.rudra.dev/scss/main.min.3ca196ab468b37c0fc58ca7e22dd30f77e15a6c8ae71460ed2600601722919f0.css" media="screen">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        
+
+    </head>
+    <body>
+        <div class="layout">
+            <header>
+	
+	<div class="title-wrapper">
+		<a href="/">
+			<h2 class="title">rudra narayan</h2>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="/posts/">posts</a></li>
+				<li><a href="/projects/">projects</a></li>
+				<li><a href="/resume/" target="_blank" >resume</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+
+	
+</header>
+
+            
+	<main>
+		<article>
+			<h1>Switching to Emacs</h1>
+
+			
+				<time>Feb 09, 2020</time>
+			
+
+			
+
+			
+			<div class="tags">
+				<ul>
+					
+					<li><a href="/tags/log">log</a></li>
+					
+					<li><a href="/tags/emacs">emacs</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<div class="blog-post-content">
+				<p>I have spend enormous time on configuring and reconfiguring my vimrc
+file for the past 4 years. I have been using (neo)vim at work for last 2
+years and I am really happy how this has turned out. Now I am pretty
+confident on most of the vim key-bindings, the register management and a
+lot of other amazing features.</p>
+<p><strong>Fuck it! I am switching to Emacs.</strong>
+<img src="/images/switching-to-emacs.png" alt=""></p>
+
+			</div>
+			
+	</main>
+	
+
+            <footer>
+	<div class="bottom-nav">
+		<nav>
+			<ul>
+				<li><a href="/about/">about</a></li>
+				<li><a href="/logs/">logs</a></li>
+				<li><a href="/privacy/">privacy</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+</footer>
+
+        </div>
+    </body>
+
+    <script>
+     
+     (function() {
+         const links = document.querySelectorAll("nav a")
+         const currentUrl = location.href
+
+         for (const link of links) {
+             if (location.href.split("/").length === 4 && link.href.endsWith("/posts/")) {
+                 link.classList.add("active-link")
+                 break;
+             }
+
+             if (link.href === currentUrl) {
+                 link.classList.add("active-link")
+             }
+         }
+     }())
+    </script>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Setting up (Neo)vim for React development</title>
+        <meta name="description" content="thoughts, obsessions and mostly rants">
+        <meta name="author" content="Rudra Narayan">
+
+        
+        <link rel="stylesheet" href="https://notes.rudra.dev/scss/main.min.3ca196ab468b37c0fc58ca7e22dd30f77e15a6c8ae71460ed2600601722919f0.css" media="screen">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        
+
+    </head>
+    <body>
+        <div class="layout">
+            <header>
+	
+	<div class="title-wrapper">
+		<a href="/">
+			<h2 class="title">rudra narayan</h2>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="/posts/">posts</a></li>
+				<li><a href="/projects/">projects</a></li>
+				<li><a href="/resume/" target="_blank" >resume</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+
+	
+</header>
+
+            
+	<main>
+		<article>
+			<h1>Setting up (Neo)vim for React development</h1>
+
+			
+				<time>May 03, 2019</time>
+			
+
+			
+
+			
+			<div class="tags">
+				<ul>
+					
+					<li><a href="/tags/vim">vim</a></li>
+					
+					<li><a href="/tags/react">react</a></li>
+					
+					<li><a href="/tags/editor">editor</a></li>
+					
+					<li><a href="/tags/js">js</a></li>
+					
+					<li><a href="/tags/web">web</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<div class="blog-post-content">
+				<p>It&rsquo;s been 8 months since I have been using (neo)vim as my primary text
+editor. Initially it was incredibly tough to adopt and use it in work.
+Well that would be another story to tell.</p>
+<p>Back then I was working mostly in backend using
+<a href="https://coffeescript.org/" target="_blank">CoffeeScript</a>
+ (I know 🙈). VS Code had a
+little support for CoffeeScript so I didn&rsquo;t had any problems using vim
+full time.</p>
+<p>But things changed drastically when I moved into UI development this
+year. I had to spend hours reading blogs, threads on reddit to create at
+least a workable setup for a hassle-less React enviornment. Here I am
+sharing my vim setup for JS/React development.</p>
+<blockquote>
+<p>Note: I am using <a href="https://github.com/VundleVim/Vundle.vim" target="_blank">Vundle</a>
+
+for plugin management.</p>
+</blockquote>
+<h2 id="syntax-highlighting"><strong>Syntax Highlighting</strong></h2>
+<p>Out of the box vim/nvim supports syntax highlighting for major
+programming languages.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  ls /usr/share/vim/vim80/syntax/
+</code></pre></div><p><a href="https://github.com/mxw/vim-jsx" target="_blank">vim-jsx</a>
+ is by far the best jsx
+plugin for vim.
+<a href="https://github.com/pangloss/vim-javascript" target="_blank">vim-javascript</a>
+ provides
+better syntax highlighting and code folding support compared to the
+default one.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">  Plugin <span style="background-color:#fff0f0">&#39;mxw/vim-jsx&#39;</span><span style="color:#f00;background-color:#faa">
+</span><span style="color:#f00;background-color:#faa"></span>  Plugin <span style="background-color:#fff0f0">&#39;pangloss/vim-javascript&#39;</span><span style="color:#f00;background-color:#faa">
+</span></code></pre></div><p>But It is yet to add <code>jsx</code> to its inventory. Also there are some
+javascript specific plugins that makes syntax highlighting much better.</p>
+<h2 id="linters-and-formatters"><strong>Linters and Formatters</strong></h2>
+<p>Well everyone has a love hate relationship with linters. Nobody likes
+those annoying red lines on the editor the moment they add a newline.</p>
+<p>But with vim You are in luck. <a href="https://github.com/w0rp/ale" target="_blank">ALE</a>
+ is a
+nice plugin that asynchronously checks for syntatical errors in the
+code. It supports mnay language specific linters and formatters. ALE
+also lets people configure the signs for errors and warnings.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">  Plugin <span style="background-color:#fff0f0">&#39;w0rp/ale&#39;</span><span style="color:#f00;background-color:#faa">
+</span></code></pre></div><p>For JS/React development to add <code>eslint</code> as a linter and <code>prettier</code> I
+added this to my vimrc</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">  <span style="color:#080;font-weight:bold">let</span> g:ale_linters = {<span style="color:#f00;background-color:#faa">
+</span><span style="color:#f00;background-color:#faa"></span>    \ <span style="background-color:#fff0f0">&#39;javascript&#39;</span>: [<span style="background-color:#fff0f0">&#39;eslint&#39;</span>],<span style="color:#f00;background-color:#faa">
+</span><span style="color:#f00;background-color:#faa"></span>    \}<span style="color:#f00;background-color:#faa">
+</span><span style="color:#f00;background-color:#faa">
+</span><span style="color:#f00;background-color:#faa"></span>  <span style="color:#080;font-weight:bold">let</span> g:ale_fixers = {<span style="color:#f00;background-color:#faa">
+</span><span style="color:#f00;background-color:#faa"></span>    \ <span style="background-color:#fff0f0">&#39;javascript&#39;</span>: [<span style="background-color:#fff0f0">&#39;prettier&#39;</span>, <span style="background-color:#fff0f0">&#39;eslint&#39;</span>]<span style="color:#f00;background-color:#faa">
+</span><span style="color:#f00;background-color:#faa"></span>    \ }<span style="color:#f00;background-color:#faa">
+</span></code></pre></div><p>I also mapped <code>leader+d</code> as my ale fixer and configured to format each
+time I save the file.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">  <span style="color:#080;font-weight:bold">let</span> g:ale_fix_on_save = <span style="color:#60e;font-weight:bold">1</span><span style="color:#f00;background-color:#faa">
+</span><span style="color:#f00;background-color:#faa"></span>  nmap &lt;leader&gt;d &lt;Plug&gt;(ale_fix)<span style="color:#f00;background-color:#faa">
+</span></code></pre></div><h2 id="autocompletion"><strong>Autocompletion</strong></h2>
+<p>Auto completion in vim is not as good as any modern IDE but
+<a href="https://github.com/Shougo/deoplete.nvim" target="_blank">Deoplete</a>
+ is worth taking a look.</p>
+<p>Check the <a href="https://github.com/Shougo/deoplete.nvim#install" target="_blank">repo</a>
+ for installation guides.</p>
+<h2 id="commenting"><strong>Commenting</strong></h2>
+<p>Though this is not specific to any particular language I would like to
+discuss an excellent plugin which is pretty good at commenting and
+uncommenting code.
+<a href="https://github.com/scrooloose/nerdcommenter" target="_blank">NerdCommenter</a>
+
+definitely going to save you a few additional key-presses a day and
+being a vimmer is all about that.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">  Plugin <span style="background-color:#fff0f0">&#39;scrooloose/nerdcommenter&#39;</span><span style="color:#f00;background-color:#faa">
+</span></code></pre></div><h2 id="conclusion"><strong>conclusion</strong></h2>
+<p>With vim it&rsquo;s hard to find an universal config that suits everyone. It&rsquo;s
+always solving one problem at a time that led me here. This is
+definitely not a full fledge solution to this but it seems to work
+pretty well for me. So if you have any suggestion feel free to ping me
+on <a href="https://twitter.com/ThisIsRudra" target="_blank">Twitter</a>
+.</p>
+<p>My full vim setup can be found
+<a href="https://github.com/mrprofessor/dotfiles/blob/master/.vimrc" target="_blank">here</a>
+.</p>
+
+			</div>
+			
+	</main>
+	
+
+            <footer>
+	<div class="bottom-nav">
+		<nav>
+			<ul>
+				<li><a href="/about/">about</a></li>
+				<li><a href="/logs/">logs</a></li>
+				<li><a href="/privacy/">privacy</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+</footer>
+
+        </div>
+    </body>
+
+    <script>
+     
+     (function() {
+         const links = document.querySelectorAll("nav a")
+         const currentUrl = location.href
+
+         for (const link of links) {
+             if (location.href.split("/").length === 4 && link.href.endsWith("/posts/")) {
+                 link.classList.add("active-link")
+                 break;
+             }
+
+             if (link.href === currentUrl) {
+                 link.classList.add("active-link")
+             }
+         }
+     }())
+    </script>
+
+</html>

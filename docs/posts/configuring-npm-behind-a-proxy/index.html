@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Configuring nodejs and npm behind a proxy</title>
+        <meta name="description" content="thoughts, obsessions and mostly rants">
+        <meta name="author" content="Rudra Narayan">
+
+        
+        <link rel="stylesheet" href="https://notes.rudra.dev/scss/main.min.3ca196ab468b37c0fc58ca7e22dd30f77e15a6c8ae71460ed2600601722919f0.css" media="screen">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        
+
+    </head>
+    <body>
+        <div class="layout">
+            <header>
+	
+	<div class="title-wrapper">
+		<a href="/">
+			<h2 class="title">rudra narayan</h2>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="/posts/">posts</a></li>
+				<li><a href="/projects/">projects</a></li>
+				<li><a href="/resume/" target="_blank" >resume</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+
+	
+</header>
+
+            
+	<main>
+		<article>
+			<h1>Configuring nodejs and npm behind a proxy</h1>
+
+			
+				<time>May 27, 2017</time>
+			
+
+			
+
+			
+			<div class="tags">
+				<ul>
+					
+					<li><a href="/tags/node">node</a></li>
+					
+					<li><a href="/tags/npm">npm</a></li>
+					
+					<li><a href="/tags/productivity">productivity</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<div class="blog-post-content">
+				<p>For people who work in a company and squeez out some of their time to
+learn nodejs, setting up an dev-environment can be a real pain. Proxy
+servers are pretty common in college and business type institutions.</p>
+<p>You can locate your proxy settings from your browser&rsquo;s settings panel.</p>
+<h2 id="using-proxy-with-npm"><strong>Using Proxy with NPM</strong></h2>
+<p>Once you have obtained the proxy settings (server URL, port, username
+and password); you need to configure your npm configurations as follows.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  npm config <span style="color:#007020">set</span> proxy http://&lt;username&gt;:&lt;password&gt;@&lt;proxy-server-url&gt;:&lt;port&gt;
+  npm config <span style="color:#007020">set</span> https-proxy http://&lt;username&gt;:&lt;password&gt;@&lt;proxy-server-url&gt;:&lt;port&gt;
+</code></pre></div><p>You would have to replace <code>&lt;username&gt;</code>, <code>&lt;password&gt;</code>,
+<code>&lt;proxy-server-url&gt;</code>, <code>&lt;port&gt;</code> with the values specific to your proxy
+server credentials.</p>
+<p>These fields are optional. For instance, your proxy server might not
+even require <code>&lt;username&gt;</code> and <code>&lt;password&gt;</code>, or that it might be running
+on port 80 (in which case <code>&lt;port&gt;</code> is not required).</p>
+<p>Once you have set these, your npm install, <code>npm i -g etc</code>. would work
+properly.</p>
+
+			</div>
+			
+	</main>
+	
+
+            <footer>
+	<div class="bottom-nav">
+		<nav>
+			<ul>
+				<li><a href="/about/">about</a></li>
+				<li><a href="/logs/">logs</a></li>
+				<li><a href="/privacy/">privacy</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+</footer>
+
+        </div>
+    </body>
+
+    <script>
+     
+     (function() {
+         const links = document.querySelectorAll("nav a")
+         const currentUrl = location.href
+
+         for (const link of links) {
+             if (location.href.split("/").length === 4 && link.href.endsWith("/posts/")) {
+                 link.classList.add("active-link")
+                 break;
+             }
+
+             if (link.href === currentUrl) {
+                 link.classList.add("active-link")
+             }
+         }
+     }())
+    </script>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Maintaining multiple GitHub accounts</title>
+        <meta name="description" content="thoughts, obsessions and mostly rants">
+        <meta name="author" content="Rudra Narayan">
+
+        
+        <link rel="stylesheet" href="https://notes.rudra.dev/scss/main.min.3ca196ab468b37c0fc58ca7e22dd30f77e15a6c8ae71460ed2600601722919f0.css" media="screen">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        
+
+    </head>
+    <body>
+        <div class="layout">
+            <header>
+	
+	<div class="title-wrapper">
+		<a href="/">
+			<h2 class="title">rudra narayan</h2>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="/posts/">posts</a></li>
+				<li><a href="/projects/">projects</a></li>
+				<li><a href="/resume/" target="_blank" >resume</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+
+	
+</header>
+
+            
+	<main>
+		<article>
+			<h1>Maintaining multiple GitHub accounts</h1>
+
+			
+				<time>Feb 24, 2018</time>
+			
+
+			
+
+			
+			<div class="tags">
+				<ul>
+					
+					<li><a href="/tags/git">git</a></li>
+					
+					<li><a href="/tags/github">github</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<div class="blog-post-content">
+				<p>I recently left a huge IT corporation for a promising startup.I was
+asked to change my GitHub handler name as it was too cool(I think) for
+them.Well instead of changing I created another account using my company
+email.</p>
+<p>Now I got a problem.Every day when I come home and start hacking around
+my own projects I had to manually set my username and email id in git
+config in order to reflect my contributions in the graph and most of the
+time I forget to do so.</p>
+<p>So I created some aliases to toggle between my two handles.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#888"># Set user 1 as current user</span>
+  gitfirst<span style="color:#333">()</span> <span style="color:#333">{</span>
+      git config --global user.email <span style="background-color:#fff0f0">&#39;xxx.yyyy@gmail.com&#39;</span> <span style="color:#333">&amp;&amp;</span> git config --global user.name <span style="background-color:#fff0f0">&#39;mrprofessor&#39;</span>
+      gituser
+  <span style="color:#333">}</span>
+
+  <span style="color:#888"># Set user 2 as current user</span>
+  gitsecond<span style="color:#333">()</span> <span style="color:#333">{</span>
+      git config --global user.email <span style="background-color:#fff0f0">&#39;zzzzz@corporation.com&#39;</span> <span style="color:#333">&amp;&amp;</span> git config --global user.name <span style="background-color:#fff0f0">&#39;rudrabot&#39;</span>
+      gituser
+  <span style="color:#333">}</span>
+
+  <span style="color:#888"># Print current user</span>
+  gituser<span style="color:#333">()</span> <span style="color:#333">{</span>
+      git config --global user.name <span style="color:#333">&amp;&amp;</span> git config --global user.email
+  <span style="color:#333">}</span>
+</code></pre></div><p>And that five minute I save every day from this hack..spends for&hellip;I
+don&rsquo;t know.</p>
+<p>Adios.</p>
+
+			</div>
+			
+	</main>
+	
+
+            <footer>
+	<div class="bottom-nav">
+		<nav>
+			<ul>
+				<li><a href="/about/">about</a></li>
+				<li><a href="/logs/">logs</a></li>
+				<li><a href="/privacy/">privacy</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+</footer>
+
+        </div>
+    </body>
+
+    <script>
+     
+     (function() {
+         const links = document.querySelectorAll("nav a")
+         const currentUrl = location.href
+
+         for (const link of links) {
+             if (location.href.split("/").length === 4 && link.href.endsWith("/posts/")) {
+                 link.classList.add("active-link")
+                 break;
+             }
+
+             if (link.href === currentUrl) {
+                 link.classList.add("active-link")
+             }
+         }
+     }())
+    </script>
+
+</html>
