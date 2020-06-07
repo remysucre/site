@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ .Title }}</title>
+
+        <!-- Favicon -->
+        {{ with .Site.Params.favicon }}<link rel="icon" type="image/png" href={{ . }}/>{{ end }}
+
+        <title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
         {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
         {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 
@@ -16,6 +20,9 @@
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
         {{- end }}
 
+        <!-- Meta tags -->
+        {{ partial "meta" . }}
+
     </head>
     <body>
         <div class="layout">
@@ -26,6 +33,8 @@
     </body>
 
     <script>
+     // TODO
+     // Use Hugo templating to achieve this
      // Script to check active nav menu
      (function() {
          const links = document.querySelectorAll("nav a")

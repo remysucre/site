@@ -1,5 +1,6 @@
-baseURL = "https://notes.rudra.dev/"
+baseURL = "https://rudra.dev/"
 languageCode = "en-us"
+DefaultContentLanguage = "en"
 
 pygmentsCodefences = true
 pygmentsStyle = "colorful"
@@ -7,12 +8,24 @@ pygmentsStyle = "colorful"
 title = "rudra narayan"
 theme = "flamingo"
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+publishDir = "docs"
 
 [params]
   author = "Rudra Narayan"
   description = "thoughts, obsessions and mostly rants"
+  sitename = "Rudra Narayan Kar blog"
+  github = "https://github.com/mrprofessor"
+  twitter = "@weary_beard"
+  favicon = "/images/favicon.ico"
 
+# Projects list
 [[params.projects]]
   name = "solitude"
   description = "A git based note taking application. 📚"
@@ -38,3 +51,9 @@ unsafe= true
   sourceLink = "https://github.com/mrprofessor/rudra.dev"
   description = "Personal blog built using Gatsby and grit."
   name = "rudra.dev"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
