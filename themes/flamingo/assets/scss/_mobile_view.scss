@@ -182,6 +182,9 @@ nav {
                 color: $post-link-color;
             }
         }
+        li:not(:last-child) {
+            padding: 0 0.1rem 0 0;
+        }
     }
 }
 
