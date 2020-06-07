@@ -3,7 +3,7 @@
 VERSION ?= latest
 
 build:
-	hugo -D --destination docs
+	hugo -D --destination docs --minify
 
 run:
 	hugo server
