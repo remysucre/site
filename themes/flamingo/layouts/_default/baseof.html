@@ -6,14 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <!-- Favicon -->
-        {{ with .Site.Params.favicon }}<link rel="icon" type="image/png" href={{ . }}/>{{ end }}
+        {{ with .Site.Params.favicon }}<link rel="icon" type="image/png" href="{{ . }}" />{{ end }}
 
         <title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
         {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
         {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 
         {{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | minify | fingerprint}}
-        <!-- <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen"> -->
         <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
