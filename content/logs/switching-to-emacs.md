@@ -2,7 +2,7 @@
 title = "Switching to Emacs"
 author = ["mrprofessor"]
 date = 2020-02-09
-tags = ["log", "emacs"]
+tags = ["log", "emacs", "status"]
 draft = false
 aliases = "/log/switching-to-emacs"
 +++
@@ -14,4 +14,7 @@ confident on most of the vim key-bindings, the register management and a
 lot of other amazing features.
 
 **Fuck it! I am switching to Emacs.**
-![](./static/images/switching-to-emacs.png)
+
+<div class="post-image">
+  <img src="/images/switching-to-emacs.png" />
+</div>

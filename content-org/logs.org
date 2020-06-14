@@ -3,7 +3,7 @@
 
 
 * Logs
-** Status update #1 :log:
+** Status update #1 :log:status:
    :PROPERTIES:
    :EXPORT_FILE_NAME: status-update-1
    :EXPORT_DATE: 2019-12-17
@@ -27,7 +27,7 @@ where as there could be thousands of views and perspectives to any problem.
 I think I gotta give it a try, now that I can.
 
 P.S: Unedited and raw stuff
-** Wrap up 2019 :log:
+** Wrap up 2019 :log:status:
    :PROPERTIES:
    :EXPORT_FILE_NAME: wrap-up-2019
    :EXPORT_DATE: 2019-12-31
@@ -118,12 +118,16 @@ Pretty good huh!
 Honestly it was a pretty good year for me. A new job, new city and a
 bunch of cool stuff to learn!
 
-[[./static/images/loki.jpg]]
+#+BEGIN_EXPORT HTML
+  <div class="post-image">
+    <img src="/images/loki.jpg" />
+  </div>
+#+END_EXPORT
 
 Hope Loki approves this post.
 
 He got me this year too.
-** Status update #2 :log:
+** Status update #2 :log:status:
    :PROPERTIES:
    :EXPORT_FILE_NAME: status-update-2
    :EXPORT_DATE: 2020-0l-31
@@ -183,7 +187,7 @@ Also I am thinking to switching to Emacs. Already joined their camp on
 reddit.
 
 P.S: Unedited and raw stuff
-** Switching to Emacs :log:emacs:
+** Switching to Emacs :log:emacs:status:
    :PROPERTIES:
    :EXPORT_FILE_NAME: switching-to-emacs
    :EXPORT_DATE: 2020-02-09
@@ -197,8 +201,14 @@ confident on most of the vim key-bindings, the register management and a
 lot of other amazing features.
 
 *Fuck it! I am switching to Emacs.*
-[[./static/images/switching-to-emacs.png]]
-** Nothing's wrong with reinventing the wheel :log:
+
+#+BEGIN_EXPORT HTML
+  <div class="post-image">
+    <img src="/images/switching-to-emacs.png" />
+  </div>
+#+END_EXPORT
+
+** Nothing's wrong with reinventing the wheel :log:rant:
    :PROPERTIES:
    :EXPORT_FILE_NAME: nothing-is-wrong-with-reinventing-the-wheel
    :EXPORT_DATE: 2020-04-05

@@ -2,7 +2,7 @@
 title = "Wrap up 2019"
 author = ["mrprofessor"]
 date = 2019-12-31
-tags = ["log"]
+tags = ["log", "status"]
 draft = false
 aliases = "/log/wrap-up-2019"
 +++
@@ -81,7 +81,9 @@ Pretty good huh!
 Honestly it was a pretty good year for me. A new job, new city and a
 bunch of cool stuff to learn!
 
-{{< figure src="./static/images/loki.jpg" >}}
+<div class="post-image">
+  <img src="/images/loki.jpg" />
+</div>
 
 Hope Loki approves this post.
 

@@ -2,7 +2,7 @@
 title = "Nothing's wrong with reinventing the wheel"
 author = ["mrprofessor"]
 date = 2020-04-05
-tags = ["log"]
+tags = ["log", "rant"]
 draft = false
 aliases = "/log/nothing-is-wrong-with-reinventing-the-wheel"
 +++

@@ -2,7 +2,7 @@
 title = "Status update #1"
 author = ["mrprofessor"]
 date = 2019-12-17
-tags = ["log"]
+tags = ["log", "status"]
 draft = false
 aliases = "/log/status-update-1"
 +++
