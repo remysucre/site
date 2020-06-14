@@ -1,5 +1,6 @@
 +++
 title = "Wrap up 2019"
+author = ["mrprofessor"]
 date = 2019-12-31
 tags = ["log"]
 draft = false
@@ -80,7 +81,7 @@ Pretty good huh!
 Honestly it was a pretty good year for me. A new job, new city and a
 bunch of cool stuff to learn!
 
-{{< figure src="/images/loki.jpg" >}}
+{{< figure src="./static/images/loki.jpg" >}}
 
 Hope Loki approves this post.
 

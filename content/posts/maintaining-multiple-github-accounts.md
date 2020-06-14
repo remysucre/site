@@ -1,5 +1,6 @@
 +++
 title = "Maintaining multiple GitHub accounts"
+author = ["mrprofessor"]
 date = 2018-02-24
 tags = ["git", "github"]
 draft = false

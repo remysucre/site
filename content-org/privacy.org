@@ -1,9 +1,11 @@
-+++
-title = "Privacy"
-author = ["mrprofessor"]
-layout = "single"
-draft = false
-+++
+#+hugo_base_dir: ../
+#+hugo_section: privacy
+
+* Privacy
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: _index
+   :EXPORT_HUGO_LAYOUT: single
+   :END:
 
 So you care about privacy then.
 

@@ -1,5 +1,6 @@
 +++
 title = "Generate and serve files from Flask"
+author = ["mrprofessor"]
 date = 2019-10-05
 tags = ["python", "flask"]
 draft = false

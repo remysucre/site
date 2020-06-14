@@ -1,5 +1,6 @@
 +++
 title = "Status update #2"
+author = ["mrprofessor"]
 tags = ["log"]
 draft = false
 aliases = "/log/status-update-2"

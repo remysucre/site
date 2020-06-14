@@ -1,5 +1,6 @@
 +++
 title = "A floating terminal for (Neo)vim"
+author = ["mrprofessor"]
 date = 2019-10-12
 tags = ["vim", "neovim", "editor", "productivity"]
 draft = false

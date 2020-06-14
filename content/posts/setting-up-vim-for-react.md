@@ -1,5 +1,6 @@
 +++
 title = "Setting up (Neo)vim for React development"
+author = ["mrprofessor"]
 date = 2019-05-03
 tags = ["vim", "react", "editor", "js", "web"]
 draft = false

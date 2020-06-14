@@ -1,5 +1,6 @@
 +++
 title = "Switching to Emacs"
+author = ["mrprofessor"]
 date = 2020-02-09
 tags = ["log", "emacs"]
 draft = false
@@ -13,4 +14,4 @@ confident on most of the vim key-bindings, the register management and a
 lot of other amazing features.
 
 **Fuck it! I am switching to Emacs.**
-![](/images/switching-to-emacs.png)
+![](./static/images/switching-to-emacs.png)

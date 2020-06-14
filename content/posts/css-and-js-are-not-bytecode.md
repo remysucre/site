@@ -1,5 +1,6 @@
 +++
 title = "CSS and JavaScript aren't byte code !!"
+author = ["mrprofessor"]
 date = 2016-09-21
 tags = ["rant", "css", "js", "web"]
 draft = false

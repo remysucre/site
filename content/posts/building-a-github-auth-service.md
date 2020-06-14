@@ -1,5 +1,6 @@
 +++
 title = "Building a GitHub authentication service"
+author = ["mrprofessor"]
 date = 2020-04-11
 tags = ["github", "auth", "flask", "python"]
 draft = false

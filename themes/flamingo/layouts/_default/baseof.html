@@ -8,7 +8,7 @@
         <!-- Favicon -->
         {{ with .Site.Params.favicon }}<link rel="icon" type="image/png" href="{{ . }}" />{{ end }}
 
-        <title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
+        <title itemprop="name">{{ .Title }} | {{ .Site.Params.description }}</title>
         {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
         {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 

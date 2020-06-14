@@ -1,5 +1,6 @@
 +++
 title = "Generate beautiful JSON from PostgreSQL"
+author = ["mrprofessor"]
 date = 2020-05-19
 tags = ["postgresql", "json", "sql"]
 draft = false
