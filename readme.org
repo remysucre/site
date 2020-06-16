@@ -1,0 +1,11 @@
+
+* Rudra.dev
+
+- Personal blog built with emacs [[https://orgmode.org/][org-mode]], [[https://gohugo.io/][Hugo]] and [[https://ox-hugo.scripter.co/][ox-hugo]].
+- Original org files can be found at `content-org` folder and the generated are in `content`.
+
+** Development
+
+- Clone the repository
+- =cd rudra.dev= and =make run=
+- To build the site into =docs= folder run =make build=

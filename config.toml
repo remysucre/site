@@ -24,6 +24,7 @@ publishDir = "docs"
   github = "https://github.com/mrprofessor"
   twitter = "@weary_beard"
   favicon = "/images/favicon.ico"
+  resume = "https://docs.google.com/gview?url=https://github.com/mrprofessor/resume/raw/master/rudra_narayan_resume.pdf&embedded=true"
 
 # Projects list
 [[params.projects]]
