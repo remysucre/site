@@ -50,7 +50,7 @@ publishDir = "docs"
 [[params.projects]]
   demoLink = "https://rudra.dev/"
   sourceLink = "https://github.com/mrprofessor/rudra.dev"
-  description = "Personal blog built using Gatsby and grit."
+  description = "Personal blog built using Org-mode and Hugo."
   name = "rudra.dev"
 
 [languages]
