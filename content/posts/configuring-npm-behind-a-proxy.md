@@ -14,7 +14,7 @@ servers are pretty common in college and business type institutions.
 You can locate your proxy settings from your browser's settings panel.
 
 
-## **Using Proxy with NPM** {#using-proxy-with-npm}
+## Using Proxy with NPM {#using-proxy-with-npm}
 
 Once you have obtained the proxy settings (server URL, port, username
 and password); you need to configure your npm configurations as follows.

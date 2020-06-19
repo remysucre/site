@@ -65,7 +65,7 @@ We have created three tables i.e. `team`, `user` and `team_user`.
 teams.
 
 
-## **1. Get the table data as JSON objects** {#1-get-the-table-data-as-json-objects}
+## 1. Get the table data as JSON objects {#1-get-the-table-data-as-json-objects}
 
 ```sql
   SELECT row_to_json("user") FROM "user";
@@ -82,7 +82,7 @@ The above mentioned query will return all the columns of each row as
 JSON objects.
 
 
-## **2. Get the table data with specific columns** {#2-get-the-table-data-with-specific-columns}
+## 2. Get the table data with specific columns {#2-get-the-table-data-with-specific-columns}
 
 We can specify the particular columns we need rather than getting all at
 once.
@@ -113,7 +113,7 @@ to us. We would rather want the column names instead of those keys.
 ```
 
 
-## **3. Get the table data as a single JSON object** {#3-get-the-table-data-as-a-single-json-object}
+## 3. Get the table data as a single JSON object {#3-get-the-table-data-as-a-single-json-object}
 
 The above examples return us multiple JSON objects(one for each row).
 Ideally we would want a single array of these objects which won't need
@@ -147,7 +147,7 @@ Also we could do the yield the same results by using `json_agg`
 function, which results into an object instead of JSON string.
 
 
-## **4. Build JSON object with multiple tables** {#4-build-json-object-with-multiple-tables}
+## 4. Build JSON object with multiple tables {#4-build-json-object-with-multiple-tables}
 
 We can also build a new JSON object by using `json_build_object` and
 specify the keys and values. Let's create an object that will contain
@@ -191,7 +191,7 @@ teams each as arrays of objects.
 ```
 
 
-## **5. Build JSON object by resolving foreign keys** {#5-build-json-object-by-resolving-foreign-keys}
+## 5. Build JSON object by resolving foreign keys {#5-build-json-object-by-resolving-foreign-keys}
 
 We can generate JSON structures by resolving foreign key references and
 joining multiple tables.
@@ -254,7 +254,7 @@ the corresponding row.
 ```
 
 
-## **Conclusion** {#conclusion}
+## Conclusion {#conclusion}
 
 Even though PostgreSQL is almost always faster than the back-end
 language based JSON generation, the query can get complex really quickly

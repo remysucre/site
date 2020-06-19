@@ -39,7 +39,7 @@ based tool to administer Celery workers and tasks.It also supports
 asynchronous task execution which comes in handy for long running tasks.
 
 
-## **Let's go hacking** {#lets-go-hacking}
+## Let's go hacking {#lets-go-hacking}
 
 > Here we will be using a dockerized environment. Now the installation
 > of redis and celery can be different from system to system and docker
@@ -254,7 +254,7 @@ Our very own timer
 > while calculating time.
 
 
-## **Monitoring events** {#monitoring-events}
+## Monitoring events {#monitoring-events}
 
 Celery has a rich support for monitoring various statistics for tasks,
 workers and events. We need to log into the container to enable and
@@ -280,7 +280,7 @@ the scheduled tasks.
 </div>
 
 
-## **Conclusion** {#conclusion}
+## Conclusion {#conclusion}
 
 In this post I have used Celery as an better alternative to crontabs
 even though the primary purpose of Celery is processing tasks queues.

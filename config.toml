@@ -5,6 +5,8 @@ DefaultContentLanguage = "en"
 pygmentsCodefences = true
 pygmentsStyle = "colorful"
 
+paginate = 20
+
 title = "rudra narayan"
 theme = "flamingo"
 [markup.goldmark.renderer]

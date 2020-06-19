@@ -20,7 +20,7 @@ Like most OAuth process it was not so straightforward even though at
 first glance it seemed so.
 
 
-## **The GitHub OAuth process** {#the-github-oauth-process}
+## The GitHub OAuth process {#the-github-oauth-process}
 
 After going through the GitHub's [guide](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/) and a bunch of other development blogs I came up with a set of steps.
 
@@ -65,7 +65,7 @@ After going through the GitHub's [guide](https://developer.github.com/apps/build
 > authentication APIs.
 
 
-## **Why do we need a back-end server** {#why-do-we-need-a-back-end-server}
+## Why do we need a back-end server {#why-do-we-need-a-back-end-server}
 
 Now with the above four steps it does look simple, doesn't it?
 
@@ -81,7 +81,7 @@ fashioned server as well as a serverless function hosted on a cloud
 provider.
 
 
-## **The proxy** {#the-proxy}
+## The proxy {#the-proxy}
 
     We will be needing only one GET API on the proxy/server to authenticate
 our client-side application. We will pre-configure our proxy/server with
@@ -136,7 +136,7 @@ call. We are also wrapping the default error message with a more
 sophisticated one.
 
 
-## **Conclusion** {#conclusion}
+## Conclusion {#conclusion}
 
 This kind of design is pretty common with most OAuth authentication
 processes. Here for hosting I have used [Glitch](https://glitch.com/)

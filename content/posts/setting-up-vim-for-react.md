@@ -25,7 +25,7 @@ sharing my vim setup for JS/React development.
 > for plugin management.
 
 
-## **Syntax Highlighting** {#syntax-highlighting}
+## Syntax Highlighting {#syntax-highlighting}
 
 Out of the box vim/nvim supports syntax highlighting for major
 programming languages.
@@ -49,7 +49,7 @@ But It is yet to add `jsx` to its inventory. Also there are some
 javascript specific plugins that makes syntax highlighting much better.
 
 
-## **Linters and Formatters** {#linters-and-formatters}
+## Linters and Formatters {#linters-and-formatters}
 
 Well everyone has a love hate relationship with linters. Nobody likes
 those annoying red lines on the editor the moment they add a newline.
@@ -85,7 +85,7 @@ time I save the file.
 ```
 
 
-## **Autocompletion** {#autocompletion}
+## Autocompletion {#autocompletion}
 
 Auto completion in vim is not as good as any modern IDE but
 [Deoplete](https://github.com/Shougo/deoplete.nvim) is worth taking a look.
@@ -93,7 +93,7 @@ Auto completion in vim is not as good as any modern IDE but
 Check the [repo](https://github.com/Shougo/deoplete.nvim#install) for installation guides.
 
 
-## **Commenting** {#commenting}
+## Commenting {#commenting}
 
 Though this is not specific to any particular language I would like to
 discuss an excellent plugin which is pretty good at commenting and
@@ -107,7 +107,7 @@ being a vimmer is all about that.
 ```
 
 
-## **conclusion** {#conclusion}
+## Conclusion {#conclusion}
 
 With vim it's hard to find an universal config that suits everyone. It's
 always solving one problem at a time that led me here. This is

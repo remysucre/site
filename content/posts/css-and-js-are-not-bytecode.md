@@ -7,8 +7,8 @@ draft = false
 aliases = "/post/css-and-js-are-not-bytecode"
 +++
 
-> Disclaimer: I was a noob(literally) when I wrote it. I just didn't wanted to
-> delete it as it was my first blog.
+> Disclaimer: This post literally doesn't make any sense. I just didn't wanted
+> to delete it as it was my first blog.
 
 The earliest computers were often programmed without the help of a
 programming language, by writing programs in absolute machine language.
@@ -30,14 +30,14 @@ now. Everything was going alright..perfect..superb in the IT Programming
 industry until when some guys got really serious about JavaScript.I
 guess that's the reason I am writing this blog now.
 
-I was in college when I learned web developement. At that time Frontend
+I was in college when I learned web development. At that time Front-end
 developers are not actually called developers but designers. I often
 took my time off from those grumpy sorting algorithms and writing C and
 used to geek off with these top three. **HTML**, **CSS** and
 **JavaScript**.Well practically less JavaScript and more **jQuery**. They
 were so addictive for a curious guy like me who used to draw his
 imaginations on a 15.6 inch screen.Nobody really cared about JavaScript
-back then...everyone was so focused on backend like php,asp,django and
+back then...everyone was so focused on back-end like php, asp, django and
 hipster rails.
 
 The space was completely occupied by JQuery with more readable and
@@ -50,7 +50,7 @@ queries(_It took me a whole year to understand `@media queries`_) and
 grids to make sites responsive.
 
 
-## **Is there any twist in this story..coz I'm getting bored !** {#is-there-any-twist-in-this-storycoz-im-getting-bored-}
+## Is there any twist in this story..coz I'm getting bored ! {#is-there-any-twist-in-this-storycoz-im-getting-bored-}
 
 Then a guy at [Twitter](https://twitter.com) developed a front-end
 framework called Bootstrap and the whole world just started drooling
@@ -78,7 +78,7 @@ transpiles to JavaScript.
 > and created _Angular 2_. React JS is unstable like an active Volcano.
 
 
-## **What's your point man..Can't you be just happy** {#whats-your-point-mancant-you-be-just-happy}
+## What's your point man..Can't you be just happy {#whats-your-point-mancant-you-be-just-happy}
 
 I am not completely against it. All that's happening is good, I surely
 have nothing against any X framework or Y library. Just teach the
@@ -87,7 +87,7 @@ any library or framework instead of the _"This framework is so cool..!!
 coz that company backs it."_ trend.
 
 
-## **Adios** {#adios}
+## Adios {#adios}
 
 Inspired from this
 [article](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f/).

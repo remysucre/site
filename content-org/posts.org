@@ -1,7 +1,6 @@
 #+hugo_base_dir: ../
 #+hugo_section: posts
 
-
 * Posts
 ** CSS and JavaScript aren't byte code !! :rant:css:js:web:
    :PROPERTIES:
@@ -11,8 +10,8 @@
    :END:
 
 #+BEGIN_QUOTE
-  Disclaimer: I was a noob(literally) when I wrote it. I just didn't wanted to
-  delete it as it was my first blog.
+  Disclaimer: This post literally doesn't make any sense. I just didn't wanted 
+  to delete it as it was my first blog.
 #+END_QUOTE
 
 The earliest computers were often programmed without the help of a
@@ -35,14 +34,14 @@ now. Everything was going alright..perfect..superb in the IT Programming
 industry until when some guys got really serious about JavaScript.I
 guess that's the reason I am writing this blog now.
 
-I was in college when I learned web developement. At that time Frontend
+I was in college when I learned web development. At that time Front-end
 developers are not actually called developers but designers. I often
 took my time off from those grumpy sorting algorithms and writing C and
 used to geek off with these top three. *HTML*, *CSS* and
 *JavaScript*.Well practically less JavaScript and more *jQuery*. They
 were so addictive for a curious guy like me who used to draw his
 imaginations on a 15.6 inch screen.Nobody really cared about JavaScript
-back then...everyone was so focused on backend like php,asp,django and
+back then...everyone was so focused on back-end like php, asp, django and
 hipster rails.
 
 The space was completely occupied by JQuery with more readable and
@@ -54,7 +53,7 @@ squeezed down version of websites.Hence designers started writing media
 queries(/It took me a whole year to understand =@media queries=/) and
 grids to make sites responsive.
 
-*** *Is there any twist in this story..coz I'm getting bored !*
+*** Is there any twist in this story..coz I'm getting bored !
     :PROPERTIES:
     :CUSTOM_ID: is-there-any-twist-in-this-storycoz-im-getting-bored-
     :END:
@@ -90,7 +89,7 @@ transpiles to JavaScript.
   and created /Angular 2/. React JS is unstable like an active Volcano.
 #+END_QUOTE
 
-*** *What's your point man..Can't you be just happy*
+*** What's your point man..Can't you be just happy
     :PROPERTIES:
     :CUSTOM_ID: whats-your-point-mancant-you-be-just-happy
     :END:
@@ -101,7 +100,7 @@ newbies the basic first. They need to know both the pro's and con's of
 any library or framework instead of the /"This framework is so cool..!!
 coz that company backs it."/ trend.
 
-*** *Adios*
+*** Adios
     :PROPERTIES:
     :CUSTOM_ID: adios
     :END:
@@ -176,7 +175,7 @@ sharing my vim setup for JS/React development.
   for plugin management.
 #+END_QUOTE
 
-*** *Syntax Highlighting*
+*** Syntax Highlighting
     :PROPERTIES:
     :CUSTOM_ID: syntax-highlighting
     :END:
@@ -202,7 +201,7 @@ default one.
 But It is yet to add =jsx= to its inventory. Also there are some
 javascript specific plugins that makes syntax highlighting much better.
 
-*** *Linters and Formatters*
+*** Linters and Formatters
     :PROPERTIES:
     :CUSTOM_ID: linters-and-formatters
     :END:
@@ -240,7 +239,7 @@ time I save the file.
   nmap <leader>d <Plug>(ale_fix)
 #+END_SRC
 
-*** *Autocompletion*
+*** Autocompletion
     :PROPERTIES:
     :CUSTOM_ID: autocompletion
     :END:
@@ -250,7 +249,7 @@ Auto completion in vim is not as good as any modern IDE but
 
 Check the [[https://github.com/Shougo/deoplete.nvim#install][repo]] for installation guides.
 
-*** *Commenting*
+*** Commenting
 :PROPERTIES:
 :CUSTOM_ID: commenting
 :END:
@@ -266,7 +265,7 @@ being a vimmer is all about that.
   Plugin 'scrooloose/nerdcommenter'
 #+END_SRC
 
-*** *conclusion*
+*** Conclusion
     :PROPERTIES:
     :CUSTOM_ID: conclusion
     :END:
@@ -506,7 +505,7 @@ events.A nice standalone project
 based tool to administer Celery workers and tasks.It also supports
 asynchronous task execution which comes in handy for long running tasks.
 
-*** *Let's go hacking*
+*** Let's go hacking
     :PROPERTIES:
     :CUSTOM_ID: lets-go-hacking
     :END:
@@ -731,7 +730,7 @@ Our very own timer
   while calculating time.
 #+END_QUOTE
 
-*** *Monitoring events*
+*** Monitoring events
     :PROPERTIES:
     :CUSTOM_ID: monitoring-events
     :END:
@@ -761,7 +760,7 @@ the scheduled tasks.
   </div>
 #+END_EXPORT
 
-*** *Conclusion*
+*** Conclusion
     :PROPERTIES:
     :CUSTOM_ID: conclusion
     :END:
@@ -792,7 +791,7 @@ servers are pretty common in college and business type institutions.
 
 You can locate your proxy settings from your browser's settings panel.
 
-*** *Using Proxy with NPM*
+*** Using Proxy with NPM
     :PROPERTIES:
     :CUSTOM_ID: using-proxy-with-npm
     :END:
@@ -835,7 +834,7 @@ on the index page.
 So I planned to convert markdown to html and serve the resultant string
 everytime we hit the index.
 
-*** *Let's go hacking*
+*** Let's go hacking
     :PROPERTIES:
     :CUSTOM_ID: lets-go-hacking
     :END:
@@ -880,7 +879,7 @@ And it looked something like this
   </div>
 #+END_EXPORT
 
-*** *Not quite there yet!*
+*** Not quite there yet!
     :PROPERTIES:
     :CUSTOM_ID: not-quite-there-yet
     :END:
@@ -921,7 +920,7 @@ Let's see how the final version looks!
 
 /Much better if you ask me!/
 
-*** *Gimme the code!*
+*** Gimme the code!
     :PROPERTIES:
     :CUSTOM_ID: gimme-the-code
     :END:
@@ -959,7 +958,7 @@ elegant history/commit management.
 Like most OAuth process it was not so straightforward even though at
 first glance it seemed so.
 
-*** *The GitHub OAuth process*
+*** The GitHub OAuth process
     :PROPERTIES:
     :CUSTOM_ID: the-github-oauth-process
     :END:
@@ -1008,7 +1007,7 @@ After going through the GitHub's [[https://developer.github.com/apps/building-oa
   authentication APIs.
 #+END_QUOTE
 
-*** *Why do we need a back-end server*
+*** Why do we need a back-end server
     :PROPERTIES:
     :CUSTOM_ID: why-do-we-need-a-back-end-server
     :END:
@@ -1026,7 +1025,7 @@ store the client secret and make the call. The proxy could be an old
 fashioned server as well as a serverless function hosted on a cloud
 provider.
 
-*** *The proxy*
+*** The proxy
     :PROPERTIES:
     :CUSTOM_ID: the-proxy
     :END:
@@ -1082,7 +1081,7 @@ variable and using them to build the required parameters for the POST
 call. We are also wrapping the default error message with a more
 sophisticated one.
 
-*** *Conclusion*
+*** Conclusion
     :PROPERTIES:
     :CUSTOM_ID: conclusion
     :END:
@@ -1162,7 +1161,7 @@ We have created three tables i.e. =team=, =user= and =team_user=.
 =team_user= table maps one-to-may the relationship between users and
 teams.
 
-*** *1. Get the table data as JSON objects*
+*** 1. Get the table data as JSON objects
     :PROPERTIES:
     :CUSTOM_ID: 1-get-the-table-data-as-json-objects
     :END:
@@ -1181,7 +1180,7 @@ teams.
 The above mentioned query will return all the columns of each row as
 JSON objects.
 
-*** *2. Get the table data with specific columns*
+*** 2. Get the table data with specific columns
     :PROPERTIES:
     :CUSTOM_ID: 2-get-the-table-data-with-specific-columns
     :END:
@@ -1214,7 +1213,7 @@ to us. We would rather want the column names instead of those keys.
   +-------------------------+
 #+END_SRC
 
-*** *3. Get the table data as a single JSON object*
+*** 3. Get the table data as a single JSON object
     :PROPERTIES:
     :CUSTOM_ID: 3-get-the-table-data-as-a-single-json-object
     :END:
@@ -1250,7 +1249,7 @@ function.
 Also we could do the yield the same results by using =json_agg=
 function, which results into an object instead of JSON string.
 
-*** *4. Build JSON object with multiple tables*
+*** 4. Build JSON object with multiple tables
     :PROPERTIES:
     :CUSTOM_ID: 4-build-json-object-with-multiple-tables
     :END:
@@ -1296,7 +1295,7 @@ teams each as arrays of objects.
   }
 #+END_SRC
 
-*** *5. Build JSON object by resolving foreign keys*
+*** 5. Build JSON object by resolving foreign keys
     :PROPERTIES:
     :CUSTOM_ID: 5-build-json-object-by-resolving-foreign-keys
     :END:
@@ -1361,7 +1360,7 @@ the corresponding row.
   ]
 #+END_SRC
 
-*** *Conclusion*
+*** Conclusion
     :PROPERTIES:
     :CUSTOM_ID: conclusion
     :END:
@@ -1371,3 +1370,49 @@ language based JSON generation, the query can get complex really quickly
 as we have nested structures. As long as we understand the basic JSON
 functions and sub-queries we can build almost any kind of structure
 without stressing the back-end processes.
+
+** GatsbyJs: An overkill for a static site generator :gatsby:react:emacs:hugo:orgmode:rant:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: gatsby-overkill-for-a-static-site-generator
+   :EXPORT_DATE: 2020-06-18
+   :END:
+
+So I have been using Gatsby for almost two years now. I have built a nice looking and fast blog with 15 odd posts. With Gatsby I got PWA is out of the box, the component's are written in react, I can query my post data from graphQL and so many other goodies.
+
+*** So why am I moving away you ask?
+
+As with my career decisions I have gradually moved from being a Full-stack(UI Primary) engineer to a back-end/platform engineer. While I still retain my love for React, I believe React shouldn't be the norm of web development. The whole ecosystem around React is maddening. It's certainly built for highly interactive web applications, but in my opinion it has no place in a static blog generation.
+
+Also GraphQL is kinda overkill for a blog too.
+
+There are certain pain points that were bugging me for a long time.
+
+1. It's hard to leverage any library that doesn't have a React component or Gatsby plugin built for it. e.g [[https://utteranc.es/][Utterances]].
+2. Tagging is not so straight-forward. Hugo and Jekyll has a first-class support for it.
+3. Running an external script always has been tough and need react specific [[https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml][hacks]].
+4. Lack of dedicated and switchable themes.
+5. The humongous amount of public files.
+
+> Creating a blog shouldn't have to be so complex. A bunch of markdown files and a simple script to convert them into HTML should be enough.
+
+It's definitely not for people who like a comfortable blogging system like [[https://wordpress.org/][Wordpress]] or [[https://jekyllrb.com/][Jeykill]], which can be set up in one afternoon. The returns we get for using and understanding such a complex stack is relatively less if you ask me.
+
+*** My new workflow
+
+I have always loved markdown until I discovered [[https://orgmode.org/][Org-mode]]. It simply blew me away. I never thought I could do so much with plain text. And when I learned about [[https://ox-hugo.scripter.co/][ox-hugo]], the idea of publishing a blog completely from emacs fascinated me.
+
+#+BEGIN_EXPORT HTML
+  <div class="post-image">
+    <img src="/images/org-hugo-setup.png" />
+  </div>
+#+END_EXPORT
+
+=Org-mode= coupled with =ox-hugo= gave me a significant advantage by managing all my pages in a single org-file. With =ox-hugo= I can convert my articles to hugo supported directory structure and the coolest thing is I can still add posts in markdown which can be independent of my master content file.
+
+Given the fact that this is a programming blog, having the ability to [[https:orgmode.org/worg/org-contrib/babel/][execute source code]] inside the document is really helpful.
+
+*** Conclusion
+
+This post is not about bashing Gatsby or showing it's inferiority. It's an humble explanation of it's pitfalls while creating a basic blog. Gatsby has served me good over the past years. Undoubtedly  it is a great software, just not well suited for my needs at the time.
+
+If you are a front-end developer with the knowledge of React and always willing to dive in and tweak whenever you need a change, then by all means go ahead. But if you don't want to go down that rabbit-hole, just know that there are much easier options available.

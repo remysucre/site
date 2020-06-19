@@ -20,7 +20,7 @@ So I planned to convert markdown to html and serve the resultant string
 everytime we hit the index.
 
 
-## **Let's go hacking** {#lets-go-hacking}
+## Let's go hacking {#lets-go-hacking}
 
 _Required packages_
 
@@ -61,7 +61,7 @@ And it looked something like this
 </div>
 
 
-## **Not quite there yet!** {#not-quite-there-yet}
+## Not quite there yet! {#not-quite-there-yet}
 
 Well even though [Richard Stallman](https://en.wikipedia.org/wiki/Richard%5FStallman) remains my hero, fortunately I do not share his [taste](https://stallman.org/) on web design. So without
 over-engineering our little snippet I thought of adding syntax highlighting with [pygments](https://pygments.org/) and [CodeHilite](https://python-markdown.github.io/extensions/code%5Fhilite/) extension.
@@ -96,7 +96,7 @@ Let's see how the final version looks!
 _Much better if you ask me!_
 
 
-## **Gimme the code!** {#gimme-the-code}
+## Gimme the code! {#gimme-the-code}
 
 Here is the full source code running on Glitch.
 
