@@ -1,17 +1,19 @@
 // Font family
-@import url('https://fonts.googleapis.com/css?family=Noticia+Text&display=swap+Display:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Noticia+Text&display=swap+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin');
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0;
-    font-family: 'Noticia Text','Georgia',sans-serif;
+    font-family: "Vollkorn", Palatino, Times;
 }
 h1, h2, h3, h4 {
-    font-family: 'Operator A', 'Operator B';
+    // font-family: 'Operator A', 'Operator B';
     font-weight: 400;
 }
-code[class*="language-"], nav, .blog-list {
+// code[class*="language-"], nav, .blog-list {
+code[class*="language-"], nav, {
     font-family: "Operator Mono A", "Operator Mono B";
     font-style: normal;
     font-weight: 400;
