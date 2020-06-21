@@ -7,7 +7,7 @@ pygmentsStyle = "colorful"
 
 paginate = 20
 
-title = "Remy Wang"
+title = "dissonance"
 theme = "flamingo"
 [markup.goldmark.renderer]
 unsafe = true
@@ -20,13 +20,11 @@ canonifyURLs = true
 publishDir = "docs"
 
 [params]
-  author = "Rudra Narayan"
-  description = "thoughts, obsessions and mostly rants"
-  sitename = "Rudra Narayan Kar blog"
-  github = "https://github.com/mrprofessor"
-  twitter = "@weary_beard"
-  favicon = "/images/favicon.ico"
-  resume = "https://docs.google.com/gview?url=https://github.com/mrprofessor/resume/raw/master/rudra_narayan_resume.pdf&embedded=true"
+  author = "Remy Wang"
+  description = "research blog"
+  sitename = "Remy Wang"
+  github = "https://github.com/remysucre"
+  # favicon = "/images/favicon.ico"
 
 # Projects list
 [[params.projects]]
