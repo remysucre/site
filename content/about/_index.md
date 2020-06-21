@@ -15,9 +15,7 @@ Before coming to Seattle, I was extremely lucky to work with Professor [Kathleen
 
 After I left the East Coast, my [counterpart][17] continues to conduct interdisciplinary studies in a great environment. 
 
-You can reach me via [email][8], or find me in 
-the plse lab (Gates 253).
-
+You can reach me via [email][8], or find me in the plse lab (Gates 253).
 
 [1]: http://uwplse.org
 [3]: conception-computation.pdf 
