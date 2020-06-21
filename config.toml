@@ -1,4 +1,4 @@
-baseURL = "https://rudra.dev/"
+baseURL = "https://www.remywang.science/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
@@ -25,33 +25,6 @@ publishDir = "docs"
   sitename = "Remy Wang"
   github = "https://github.com/remysucre"
   # favicon = "/images/favicon.ico"
-
-# Projects list
-[[params.projects]]
-  name = "solitude"
-  description = "A git based note taking application. 📚"
-  demoLink = "https://solitudenote.github.io/solitude/"
-  sourceLink = "https://github.com/solitudenote/solitude"
-
-
-[[params.projects]]
-  name = "gitkeeper"
-  description = "A tiny microservice for client side GitHub authentication."
-  demoLink = "https://solitudenote-gitkeeper.glitch.me/"
-  sourceLink = "https://github.com/solitudenote/gitkeeper"
-
-
-[[params.projects]]
-  demoLink = ""
-  sourceLink = "https://github.com/mrprofessor/obliterate"
-  description = "A command line tool written in rust to replace rm."
-  name = "obliterate"
-
-[[params.projects]]
-  demoLink = "https://rudra.dev/"
-  sourceLink = "https://github.com/mrprofessor/rudra.dev"
-  description = "Personal blog built using Org-mode and Hugo."
-  name = "rudra.dev"
 
 [languages]
   [languages.en]

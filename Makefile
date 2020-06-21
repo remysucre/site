@@ -1,19 +1,10 @@
-.PHONY: build run clean deploy
+.PHONY: build run clean
 
 VERSION ?= latest
 
 build:
-	hugo -D --destination docs --minify 
-	cp static/CNAME docs/
+	hugo -D --destination public --minify 
+	cp static/CNAME public/
 
 run:
 	hugo server
-
-clean:
-	rm -rvf docs
-	rm -rvf public
-
-deploy:
-	git add docs/
-	git commit -m "Site build"
-	git push origin master
