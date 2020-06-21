@@ -1,7 +1,7 @@
 +++
 title = "Bio"
 author = ["remysucre"]
-layout = "single"
+layout = "bio"
 draft = false
 +++
 

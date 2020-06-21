@@ -7,7 +7,7 @@ pygmentsStyle = "colorful"
 
 paginate = 20
 
-title = "dissonance"
+title = "remy wang"
 theme = "flamingo"
 [markup.goldmark.renderer]
 unsafe = true
