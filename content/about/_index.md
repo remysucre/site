@@ -9,7 +9,7 @@ draft = false
 
 I'm a PhD student at [uwdb][18] and [uwplse][1] advised by [Dan Suciu][19]. 
 I [optimize large scale machine learning code][20] by exploiting the connection 
-between linear algebra and relation algebra. 
+between linear algebra and relation algebra. The optimizer is based on [egg][21], a powerful rewrite system developed at [plse][1] that has been applied to many different domains. 
 
 Before coming to Seattle, I was extremely lucky to work with Professor [Kathleen Fisher][13] and [Diogenes Nunez][14] at Tufts. They [lead me into research][12] and convinced me to keep doing it. Even before that, Professor [Norman Ramsey][15] taught me almost everything I knew about programming using [How to Design Programs][16]. 
 
@@ -36,3 +36,4 @@ You can reach me via [email][8], or find me in the plse lab (Gates 253).
 [18]: http://db.cs.washington.edu
 [19]: https://homes.cs.washington.edu/~suciu/
 [20]: http://www.vldb.org/pvldb/vol13/p1919-wang.pdf
+[21]: https://mwillsey.com/papers/egg/
