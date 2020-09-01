@@ -35,4 +35,4 @@ You can reach me via [email][8], or find me in the plse lab (Gates 253).
 [17]: https://news.harvard.edu/gazette/story/2018/10/harvards-remy-is-more-than-a-humanities-cat/
 [18]: http://db.cs.washington.edu
 [19]: https://homes.cs.washington.edu/~suciu/
-[20]: https://github.com/wormhole-optimization/warp
+[20]: http://www.vldb.org/pvldb/vol13/p1919-wang.pdf
